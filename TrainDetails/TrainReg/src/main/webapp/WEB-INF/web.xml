@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>TrainReg</display-name>
+  
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>loginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/tyu</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>DisServlet</servlet-name>
+  <servlet-class>disServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  <servlet-name>DisServlet</servlet-name>
+  <url-pattern>/poi</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>RegServlet</servlet-name>
+  <servlet-class>regServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  <servlet-name>RegServlet</servlet-name>
+  <url-pattern>/mnb</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>homepg.html</welcome-file>
+    
+  </welcome-file-list>
+</web-app>
+ 
